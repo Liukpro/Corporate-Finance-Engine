@@ -1,6 +1,6 @@
 from yahoo_fetcher import fetch_financials
-from dag_resolver import resolve_inputs
-from dag_calculator import *
+from resolver import resolve_inputs
+from formulas import *
 
 def main(ticker):
 
@@ -11,7 +11,8 @@ def main(ticker):
     mol = calc_mol(data["ric_op_mon"], data["cost_op_mon"])
     rol = calc_rol_from_mol(mol, data["ammort"])
 
-    print(mol, rol)
+    print(f"MOL (Margine Operativo Lordo): {mol:,.0f}")
+    print(f"ROL (Risultato Operativo Lordo): {rol:,.0f}")
 
 if __name__ == "__main__":
     main("RACE")
