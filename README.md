@@ -105,4 +105,4 @@ pip install yahooquery pandas
 ---
 
 ## License
-
+Apache 2.0
