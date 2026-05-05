@@ -35,6 +35,3 @@ def main(ticker, year=None):
 
 if __name__ == "__main__":
     main("RACE", year = 2025)
-
-if __name__ == "__main__":
-    main("RACE", year = 2025)
