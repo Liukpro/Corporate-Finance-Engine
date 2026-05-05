@@ -90,7 +90,7 @@ pip install yahooquery pandas
 | Full cash flow pipeline (FCGC, FCID, FCU, FCE) | In progress |
 | Ratio analysis (ROS, ROI, ROE) | In progress |
 | Multi-year loop | Planned |
-| API layer | Planned |
+| UI layer | Planned |
 | Report output (PDF/Excel) | Planned |
 
 ---
