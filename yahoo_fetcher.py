@@ -86,10 +86,16 @@ def _get_latest(df, year=None):
     if df is None or df.empty:
         return None
 
-    df = df.copy()
+    df = df.copy().reset_index()
 
-    if "asOfDate" in df.columns:
-        df = df.sort_values("asOfDate")
+    if "asOfDate" not in df.columns:
+        return None
+
+    df["asOfDate"] = pd.to_datetime(df["asOfDate"])
+    df = df.sort_values("asOfDate")
+
+    if "periodType" in df.columns:
+        df = df[df["periodType"] == "12M"]
 
     if year:
         df = df[df["asOfDate"].dt.year == year]
