@@ -28,6 +28,15 @@ against official annual reports from Ferrari investor relations.
 
 ---
 
+## Verification
+
+Outputs verified against Ferrari N.V. (RACE) official Annual Report 2025.
+Differences are rounding artifacts from Yahoo Finance reporting in millions.
+
+Source: Ferrari N.V. Annual Report 2025 — Consolidated Income Statement.
+
+---
+
 ## Usage
 
 ```bash
